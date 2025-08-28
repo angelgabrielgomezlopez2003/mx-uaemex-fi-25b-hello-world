@@ -1,10 +1,3 @@
-
-## **3. Integrar el primer proyecto simple de Java**
-
-### **3.a. Crear el programa Java**
-Dentro de tu repositorio, crea un archivo llamado `HelloWorld.java` con el siguiente contenido:
-
-```java
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -12,11 +5,11 @@ public class HelloWorld {
     public static void main(String[] args) {
         // Obtener la hora actual
         LocalDateTime hora = LocalDateTime.now();
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String formattedTime = hora.format(formato);
         
         // Imprimir el mensaje con la hora
         System.out.println("Hello world!");
-        System.out.println("Hora de ejecución: " + formattedTime);
+        System.out.println("Hora de ejecucion: " + formattedTime);
     }
 }
